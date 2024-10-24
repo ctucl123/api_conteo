@@ -1,7 +1,6 @@
 import cv2
-import torch
 from ultralytics import YOLO
-from ByteTrack.yolox.tracker.byte_tracker import BYTETracker,STrack
+from ByteTrack.yolox.tracker.byte_tracker import BYTETracker
 import numpy as np
 
 

@@ -23,3 +23,4 @@ while cap.isOpened():
         continue
     boxes, scores, class_ids = yolov8_detector(frame)
     print(scores)
+

@@ -33,7 +33,6 @@ def multiclass_nms(boxes, scores, class_ids, iou_threshold):
         class_indices = np.where(class_ids == class_id)[0]
         class_boxes = boxes[class_indices,:]
         class_scores = scores[class_indices]
-
         class_keep_boxes = nms(class_boxes, class_scores, iou_threshold)
         keep_boxes.extend(class_indices[class_keep_boxes])
 

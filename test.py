@@ -1,11 +1,9 @@
 import cv2
 video_path = 'video/test1.mp4'
 cap = cv2.VideoCapture(video_path)
-
 if not cap.isOpened():
     print("Error al abrir el video.")
     exit()
-
 while cap.isOpened():
     if cv2.waitKey(1) == ord('q'):
         break

@@ -1,5 +1,4 @@
 import cv2
-from yolov8 import YOLOv8
 video_path = 'video/test1.mp4'
 cap = cv2.VideoCapture(video_path)
 
